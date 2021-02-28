@@ -1,0 +1,16 @@
+To run the application
+
+Go to the root directory
+
+1. npm install
+
+2. Didn't set the .env configuration, so have to
+change the databse configuration at the config directory
+
+3. Create the database and set the name on the config with security options
+
+4. Build for production
+NODE_ENV=production npm run build
+
+5. npm start will run the application, got to port localhost:4000 to 
+check the playground
