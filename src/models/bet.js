@@ -33,44 +33,13 @@
   };
   module.exports = Bet;
   // Bet.belongsTo(User);
-  // module.exports = Bet;
-  // Bet.associate = function (models) {
+  
+  Bet.associate = function (models) {
     
-  //   Bet.belongsTo(models.User, {
-  //     foreignKey: 'userId',
-  //     onDelete: 'CASCADE'
-  //   })
-  // };
-  // return Bet;
-// };
+    Bet.belongsTo(models.User, {
+      foreignKey: 'userId',
+      onDelete: 'CASCADE'
+    });
+  };
 
-
-
-
-// 'use strict';
-// const {
-//   Model
-// } = require('sequelize');
-// module.exports = (sequelize, DataTypes) => {
-//   class Bet extends Model {
-//     /**
-//      * Helper method for defining associations.
-//      * This method is not a part of Sequelize lifecycle.
-//      * The `models/index` file will call this method automatically.
-//      */
-//     static associate(models) {
-//       // define association here
-//     }
-//   };
-//   Bet.init({
-//     betAmount: DataTypes.FLOAT,
-//     chance: DataTypes.FLOAT,
-//     payout: DataTypes.FLOAT,
-//     win: DataTypes.BOOLEAN,
-//     userId: DataTypes.INTEGER
-//   }, {
-//     sequelize,
-//     modelName: 'Bet',
-//   });
-//   return Bet;
 // };

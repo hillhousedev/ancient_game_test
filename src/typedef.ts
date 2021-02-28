@@ -16,11 +16,13 @@ export default gql`
         win: Boolean
     }
 
+
     type Query {
         getUser(id: ID): User
         getUserList: [User]
         getBetList: [Bet!]
         getBet(id: ID): Bet
+        getTusers: [Tuser!]
     }
 
    type Mutation {

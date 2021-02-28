@@ -14,3 +14,7 @@ NODE_ENV=production npm run build
 
 5. npm start will run the application, got to port localhost:4000 to 
 check the playground
+
+
+Had a challenge with the models association using sequelize.js
+There is no way I can implement the rate limiting without solving the association problem
